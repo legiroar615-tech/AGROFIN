@@ -1,0 +1,571 @@
+<html>
+<head>
+<title>activity_cultivos.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #56a8f5;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_cultivos.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;ScrollView </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_background&quot;</span>
+    <span class="s1">android:fillViewport</span><span class="s2">=&quot;true&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;LinearLayout</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;700dp&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+            <span class="s1">android:paddingStart</span><span class="s2">=&quot;14dp&quot;</span>
+            <span class="s1">android:paddingTop</span><span class="s2">=&quot;14dp&quot;</span>
+            <span class="s1">android:paddingEnd</span><span class="s2">=&quot;14dp&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;28dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:includeFontPadding</span><span class="s2">=&quot;false&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;</span><span class="s4">&amp;#8592;</span><span class="s2">&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;28sp&quot;</span>
+                    <span class="s1">android:translationY</span><span class="s2">=&quot;-4dp&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Gestion de cultivos&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;20sp&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;145dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;55dp&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;52dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;52dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Logo AgroFin&quot;</span>
+                        <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/logo_agrofin&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;AGROFIN&quot;</span>
+                            <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Sistema de control</span><span class="s4">&amp;#10;</span><span class="s2">financiero&quot;</span>
+                            <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;10sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;14dp&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                <span class="s1">android:padding</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Lista de cultivos&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;19sp&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Administra los cultivos registrados&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;72dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_primary_button&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;+ Nuevo</span><span class="s4">&amp;#10;</span><span class="s2">cultivo&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_white&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                    <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;527dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                <span class="s1">android:padding</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_busqueda_redonda&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">android:paddingStart</span><span class="s2">=&quot;12dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Buscar&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_search&quot;</span>
+                        <span class="s1">app:tint</span><span class="s2">=&quot;@color/agrofin_primary&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Buscar cultivo...&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;15sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s5">&lt;!-- Potrero 1 --&gt;</span>
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;88dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Cultivo&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_cultivos&quot;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Potrero # 1</span><span class="s4">&amp;#10;</span><span class="s2">Cultivo de papa superior&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;13sp&quot;</span>
+                            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;5.00 ha</span><span class="s4">&amp;#10;</span><span class="s2">20 de nov de 2025&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;54dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_estado_cerrado&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Cerrado&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_white&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;11sp&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;18dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;</span><span class="s4">&amp;#8942;</span><span class="s2">&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s5">&lt;!-- Potrero 2 --&gt;</span>
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;88dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Cultivo&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_cultivos&quot;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Potrero # 2</span><span class="s4">&amp;#10;</span><span class="s2">Cultivo de papa unica&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;13sp&quot;</span>
+                            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;3.00 ha</span><span class="s4">&amp;#10;</span><span class="s2">10 de octubre de 2025&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;54dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#EF6C74&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Cerrado&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_white&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;11sp&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;18dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;</span><span class="s4">&amp;#8942;</span><span class="s2">&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s5">&lt;!-- Potrero 3 --&gt;</span>
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;88dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Cultivo&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_cultivos&quot;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Potrero # 3</span><span class="s4">&amp;#10;</span><span class="s2">Cultivo de papa criolla&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;13sp&quot;</span>
+                            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;1.5 ha</span><span class="s4">&amp;#10;</span><span class="s2">10 de marzo de 2026&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;54dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_estado_activo&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Activo&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;11sp&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;18dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;</span><span class="s4">&amp;#8942;</span><span class="s2">&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+
+                <span class="s5">&lt;!-- Potrero 4 --&gt;</span>
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;88dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_tarjeta_redonda&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;ImageView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;44dp&quot;</span>
+                        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Cultivo&quot;</span>
+                        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_cultivos&quot;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Potrero # 4</span><span class="s4">&amp;#10;</span><span class="s2">Cultivo de papa superior&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;13sp&quot;</span>
+                            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;4.5 ha</span><span class="s4">&amp;#10;</span><span class="s2">20 de mayo de 2026&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;54dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;#D8F6CD&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;Activo&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;11sp&quot;</span>
+                        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;18dp&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;</span><span class="s4">&amp;#8942;</span><span class="s2">&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;59dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_total_cultivos&quot;</span>
+                    <span class="s1">android:drawablePadding</span><span class="s2">=&quot;6dp&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                    <span class="s1">android:paddingStart</span><span class="s2">=&quot;12dp&quot;</span>
+                    <span class="s1">android:paddingEnd</span><span class="s2">=&quot;12dp&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/total_cultivos_activos&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                    <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                    <span class="s1">app:drawableStart</span><span class="s2">=&quot;@drawable/ic_cultivos&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+        <span class="s0">&lt;Space</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;0dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;58dp&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_white&quot;</span>
+            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;ImageView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_home&quot;</span>
+                    <span class="s1">app:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Inicio&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;ImageView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_cultivos&quot;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Cultivos&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+                    <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;ImageView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_ingresos&quot;</span>
+                    <span class="s1">app:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Ingresos&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;ImageView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_egresos&quot;</span>
+                    <span class="s1">app:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Egresos&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;ImageView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                    <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_usuarios&quot;</span>
+                    <span class="s1">app:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;Usuarios&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+    <span class="s0">&lt;/LinearLayout&gt;</span>
+<span class="s0">&lt;/ScrollView&gt;</span></pre>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>activity_inicio_sesion.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_inicio_sesion.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_background&quot;</span>
+    <span class="s1">android:fitsSystemWindows</span><span class="s2">=&quot;true&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;ScrollView</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:fillViewport</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:overScrollMode</span><span class="s2">=&quot;never&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+            <span class="s1">android:paddingStart</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:paddingTop</span><span class="s2">=&quot;56dp&quot;</span>
+            <span class="s1">android:paddingEnd</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:paddingBottom</span><span class="s2">=&quot;32dp&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;ImageView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/ivlogo&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;199dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;156dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+                <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+                <span class="s1">android:contentDescription</span><span class="s2">=&quot;@string/logo_description&quot;</span>
+                <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot;</span>
+                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/logo_agrofin&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/tvBrand&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;2dp&quot;</span>
+                <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/app_name&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;20sp&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;2dp&quot;</span>
+                <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/app_tagline&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;18dp&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;360dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;46dp&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_login_card&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                <span class="s1">android:paddingBottom</span><span class="s2">=&quot;18dp&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:paddingStart</span><span class="s2">=&quot;20dp&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/login_title&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_card_surface&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textFontWeight</span><span class="s2">=&quot;700&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;19sp&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:paddingStart</span><span class="s2">=&quot;20dp&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s2">=&quot;1dp&quot;</span>
+                    <span class="s1">android:paddingBottom</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/login_subtitle&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_card_surface&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                    <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;View</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;1dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_background&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                    <span class="s1">android:paddingStart</span><span class="s2">=&quot;20dp&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s2">=&quot;14dp&quot;</span>
+                    <span class="s1">android:paddingEnd</span><span class="s2">=&quot;20dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/email_label&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_input&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                        <span class="s1">android:paddingStart</span><span class="s2">=&quot;16dp&quot;</span>
+                        <span class="s1">android:paddingEnd</span><span class="s2">=&quot;12dp&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;ImageView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                            <span class="s1">android:contentDescription</span><span class="s2">=&quot;@null&quot;</span>
+                            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_email&quot;</span>
+                            <span class="s1">android:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;EditText</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/etEmail&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;10dp&quot;</span>
+                            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                            <span class="s1">android:autofillHints</span><span class="s2">=&quot;emailAddress&quot;</span>
+                            <span class="s1">android:background</span><span class="s2">=&quot;@android:color/transparent&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:hint</span><span class="s2">=&quot;@string/email_hint&quot;</span>
+                            <span class="s1">android:inputType</span><span class="s2">=&quot;textEmailAddress&quot;</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:singleLine</span><span class="s2">=&quot;true&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/agrofin_hint&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;12dp&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/password_label&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_input&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                        <span class="s1">android:paddingStart</span><span class="s2">=&quot;16dp&quot;</span>
+                        <span class="s1">android:paddingEnd</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;ImageView</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;22dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;22dp&quot;</span>
+                            <span class="s1">android:contentDescription</span><span class="s2">=&quot;@null&quot;</span>
+                            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_lock&quot;</span>
+                            <span class="s1">android:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;EditText</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/etPassword&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;10dp&quot;</span>
+                            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                            <span class="s1">android:autofillHints</span><span class="s2">=&quot;password&quot;</span>
+                            <span class="s1">android:background</span><span class="s2">=&quot;@android:color/transparent&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                            <span class="s1">android:hint</span><span class="s2">=&quot;@string/password_hint&quot;</span>
+                            <span class="s1">android:inputType</span><span class="s2">=&quot;textPassword&quot;</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:singleLine</span><span class="s2">=&quot;true&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_text&quot;</span>
+                            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/agrofin_hint&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;ImageButton</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/btnTogglePassword&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;34dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;34dp&quot;</span>
+                            <span class="s1">android:background</span><span class="s2">=&quot;@android:color/transparent&quot;</span>
+                            <span class="s1">android:contentDescription</span><span class="s2">=&quot;@string/show_password&quot;</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;6dp&quot;</span>
+                            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/ic_visibility_off&quot;</span>
+                            <span class="s1">android:tint</span><span class="s2">=&quot;@color/agrofin_text&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/btnLogin&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+                        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_primary_button&quot;</span>
+                        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+                        <span class="s1">android:focusable</span><span class="s2">=&quot;true&quot;</span>
+                        <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/login_button&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_white&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;42dp&quot;</span>
+                        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bg_outline_button&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/tvRegister&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;@string/register&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;13sp&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;View</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;1dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:background</span><span class="s2">=&quot;@color/agrofin_primary&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/tvForgotPassword&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:paddingStart</span><span class="s2">=&quot;4dp&quot;</span>
+                            <span class="s1">android:paddingEnd</span><span class="s2">=&quot;4dp&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;@string/forgot_password&quot;</span>
+                            <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/agrofin_primary&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;12sp&quot;</span>
+                            <span class="s1">android:fontFamily</span><span class="s2">=&quot;serif&quot; </span><span class="s0">/&gt;</span>
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+    <span class="s0">&lt;/ScrollView&gt;</span>
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre>
+</body>
+</html>

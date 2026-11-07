@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGROFIN - Iniciar Sesión</title>
+
+  <style>
+    /* Configuración general */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+     body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+}
+
+    /* Pantalla */
+    .login-screen {
+      width: 100%;
+      max-width: 335px;
+      background: #E1FFD5;
+      padding: 26px 25px 27px;
+    }
+
+    /* Logo */
+    .logo-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+
+    .logo-box img {
+      width: 200PX;
+      height: auto;
+      display: block;
+    }
+
+    /* Tarjeta */
+    .login-card {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #8CDC76;
+    }
+
+    /* Encabezado del formulario */
+    .card-header {
+      padding: 12px 18px 13px;
+      background: #D0D0D0;
+      border-bottom: 1px solid #8CDC76;
+    }
+
+    .card-header h1 {
+      margin-bottom: 6px;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .card-header p {
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 700;
+      color: #5A6975;
+    }
+
+    /* Formulario */
+    .login-form {
+      padding: 13px 20px 20px;
+      background: #FFFFFF;
+    }
+
+    .login-form label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 11px;
+      line-height: 13px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .input-box {
+      height: 42px;
+      margin-bottom: 13px;
+      display: flex;
+      align-items: center;
+      background: #F3F3F3;
+      padding: 0 15px;
+    }
+
+    .input-icon {
+      width: 19px;
+      margin-right: 11px;
+      color: #7DBB69;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .input-box input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #2B780D;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .input-box input::placeholder {
+      color: #5B9A4A;
+      opacity: 1;
+    }
+
+    /* Botón principal */
+    .login-btn {
+      width: 100%;
+      height: 42px;
+      margin: 7px 0 20px;
+      border: 1px solid #2B780D;
+      background: #FFFFFF;
+      color: #2B780D;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    /* Acciones */
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 41px;
+      border: 1px solid #2B780D;
+    }
+
+    .actions a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 13px;
+      font-weight: 700;
+    }
+
+    .register {
+      background: #0F8500;
+      color: #FFFFFF;
+    }
+
+    .forgot {
+      background: #FFFFFF;
+      color: #2B780D;
+    }
+
+    /* Responsive */
+    @media (max-width: 360px) {
+      body {
+        padding: 0;
+      }
+
+      .login-screen {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Pantalla de inicio de sesión -->
+  <main class="login-screen">
+
+    <!-- Logo -->
+    <header class="logo-box">
+     <img
+    src="https://uploads.onecompiler.io/44spbt55r/1781999069121/LOGO1.png"
+    alt="AGROFIN"
+  />
+    </header>
+
+    <!-- Formulario -->
+    <section class="login-card">
+
+      <!-- Header -->
+      <div class="card-header">
+        <h1>Iniciar Sesión</h1>
+        <p>Ingresa tus datos para acceder al sistema</p>
+      </div>
+
+      <!-- Campos -->
+      <form class="login-form">
+        <label for="usuario">Usuario *</label>
+        <div class="input-box">
+          <span class="input-icon">✉</span>
+          <input id="usuario" type="text" placeholder="Ingresa tu usuario" />
+        </div>
+
+        <label for="password">Contraseña *</label>
+        <div class="input-box">
+          <span class="input-icon">♙</span>
+          <input id="password" type="password" placeholder="Ingresa tu contraseña" />
+        </div>
+
+        <!-- Botón -->
+        <button class="login-btn" type="submit">Iniciar Sesión</button>
+
+        <!-- Acciones -->
+        <div class="actions">
+          <a href="#" class="register">Regístrate aquí</a>
+          <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+
+    </section>
+  </main>
+</body>
+</html>

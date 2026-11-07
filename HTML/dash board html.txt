@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGROFIN - Panel de control</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+}
+
+    .app {
+      width: 100%;
+      max-width: 335px;
+      background: #FFFFFF;
+      border: 1px solid #D6D6D6;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .topbar {
+      height: 62px;
+      background: #E1FFD5;
+      display: grid;
+      grid-template-columns: 38px 1fr 42px;
+      align-items: center;
+      padding: 0 8px;
+      column-gap: 6px;
+    }
+
+    .menu-icon {
+      color: #FFFFFF;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .logo {
+      width: 150px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .bell {
+      position: relative;
+      text-align: right;
+      font-size: 24px;
+      color: #F3C247;
+    }
+
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -2px;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: #FF1F38;
+      color: #FFFFFF;
+      font-size: 12px;
+      line-height: 19px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    /* Bienvenida */
+    .welcome {
+      padding: 6px 10px 6px;
+      background: #FFFFFF;
+    }
+
+    .welcome h1 {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .welcome p {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 700;
+      color: #5A6975;
+    }
+
+    /* Secciones */
+    .section {
+      margin: 4px 6px;
+      border: 1px solid #8CDC76;
+      background: #FFFFFF;
+    }
+
+    .section-header {
+      min-height: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 8px 2px 6px;
+    }
+
+    .section-header h2 {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .section-header a {
+      font-size: 12px;
+      color: #2B780D;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* Resumen */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding: 4px 8px 9px;
+    }
+
+    .summary-card {
+      height: 55px;
+      border-radius: 5px;
+      background: #E1FFD5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #2B780D;
+    }
+
+    .summary-card strong {
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: 800;
+    }
+
+    .summary-card .money {
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 800;
+    }
+
+    .summary-card span {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 11px;
+      font-weight: 700;
+    }
+
+    .summary-card .mini-icon {
+      font-size: 25px;
+      line-height: 18px;
+      font-weight: 800;
+    }
+
+    /* Recordatorios */
+    .reminder-list {
+      padding: 0 8px 6px;
+    }
+
+    .reminder {
+      display: grid;
+      grid-template-columns: 42px 1fr 76px;
+      align-items: center;
+      min-height: 47px;
+    }
+
+    .circle-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .circle-icon.green {
+      background: #E8F9E1;
+      color: #2B780D;
+    }
+
+    .circle-icon.yellow {
+      background: #FFF4D5;
+      color: #C99424;
+    }
+
+    .reminder h3 {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .reminder p {
+      font-size: 12px;
+      line-height: 13px;
+      font-weight: 700;
+      color: #5A6975;
+    }
+
+    .date {
+      text-align: right;
+      font-size: 12px;
+      font-weight: 700;
+      color: #7C8791;
+    }
+
+    /* Accesos rápidos */
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      padding: 4px 8px 8px;
+    }
+
+    .quick-item {
+      height: 52px;
+      border-radius: 9px;
+      background: #E1FFD5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #2B780D;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .quick-icon {
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 800;
+    }
+
+    .quick-item span {
+      margin-top: 3px;
+      font-size: 10px;
+      line-height: 11px;
+      font-weight: 700;
+    }
+
+    /* Alertas */
+    .alert-list {
+      padding: 0 8px 6px;
+    }
+
+    .alert-item {
+      display: grid;
+      grid-template-columns: 42px 1fr 76px;
+      align-items: center;
+      min-height: 43px;
+    }
+
+    .alert-icon {
+      width: 31px;
+      height: 31px;
+      border: 2px solid #2B780D;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2B780D;
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .alert-info h3 {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 800;
+      color: #2B780D;
+    }
+
+    .alert-info p {
+      font-size: 9px;
+      line-height: 12px;
+      font-weight: 700;
+      color: #5A6975;
+    }
+
+    .time {
+      text-align: right;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 700;
+      color: #5A6975;
+    }
+
+    /* Navegación inferior */
+    .bottom-nav {
+      height: 48px;
+      border-top: 1px solid #CFCFCF;
+      background: #FFFFFF;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: center;
+      padding: 1px 3px 2px;
+    }
+
+    .nav-item {
+      height: 45px;
+      color: #5A6975;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      line-height: 11px;
+      font-weight: 800;
+    }
+
+    .nav-icon {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 2px;
+    }
+
+    .nav-item.active {
+      color: #2B780D;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+
+    <!-- Header -->
+    <header class="topbar">
+      <div class="menu-icon">≡</div>
+
+      <div class="logo-wrap">
+        <img
+          class="logo"
+          src="https://uploads.onecompiler.io/44spbt55r/1781913846047/Logo.png"
+          alt="AGROFIN"
+        />
+      </div>
+
+      <div class="bell">
+        🔔
+        <span class="badge">3</span>
+      </div>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="welcome">
+      <h1>¡Bienvenido, Juan Pérez!</h1>
+      <p>Administrador</p>
+    </section>
+
+    <!-- Resumen -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Resumen de cultivos activos</h2>
+        <a href="#">Ver todos</a>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card">
+          <strong>4</strong>
+          <span>Cultivos<br>Activos</span>
+        </div>
+
+        <div class="summary-card">
+          <div class="mini-icon"> 3</div>
+          <span>En desarrollo</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>1</strong>
+          <span>Por cerrar</span>
+        </div>
+
+        <div class="summary-card">
+          <div class="money">$12.540.000</div>
+          <span>Utilidad estimada</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recordatorios -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Recordatorios</h2>
+        <a href="#">Ver todos</a>
+      </div>
+
+      <div class="reminder-list">
+        <div class="reminder">
+          <div class="circle-icon green">▣</div>
+          <div>
+            <h3>Siembra programada</h3>
+            <p>Cultivo de papa potrero #3</p>
+          </div>
+          <div class="date">20 May 2026</div>
+        </div>
+
+        <div class="reminder">
+          <div class="circle-icon yellow">▣</div>
+          <div>
+            <h3>Revisar inventario de insumos</h3>
+            <p>Cultivo de papa potrero #6</p>
+          </div>
+          <div class="date">21 junio 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accesos rápidos -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Accesos rápidos</h2>
+      </div>
+
+      <div class="quick-grid">
+        <a href="#" class="quick-item">
+          <div class="quick-icon">🌱</div>
+          <span>Cultivos</span>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">$</div>
+          <span>Ingresos</span>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">👥</div>
+          <span>Socios</span>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">▥</div>
+          <span>Reportes</span>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">↓</div>
+          <span>Egresos</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Alertas -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Alertas y notificaciones</h2>
+        <a href="#">Ver todas</a>
+      </div>
+
+      <div class="alert-list">
+        <div class="alert-item">
+          <div class="alert-icon">i</div>
+          <div class="alert-info">
+            <h3>Sincronización completa</h3>
+            <p>La información se sincronizó correctamente.</p>
+          </div>
+          <div class="time">Hace 3 horas</div>
+        </div>
+
+        <div class="alert-item">
+          <div class="alert-icon">✓</div>
+          <div class="alert-info">
+            <h3>Nuevo ingreso registrado</h3>
+            <p>Se registró un nuevo ingreso en el cultivo #3</p>
+          </div>
+          <div class="time">Ayer, 6:30p.m.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navegación inferior -->
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active">
+        <div class="nav-icon">⌂</div>
+        Inicio
+      </a>
+
+      <a href="#" class="nav-item">
+        <div class="nav-icon">🌿</div>
+        Cultivos
+      </a>
+
+      <a href="#" class="nav-item">
+        <div class="nav-icon">$</div>
+        Ingresos
+      </a>
+
+      <a href="#" class="nav-item">
+        <div class="nav-icon">↓</div>
+        Egresos
+      </a>
+
+      <a href="#" class="nav-item">
+        <div class="nav-icon">▥</div>
+        Reportes
+      </a>
+
+      <a href="#" class="nav-item">
+        <div class="nav-icon">•••</div>
+        Más
+      </a>
+    </nav>
+
+  </main>
+</body>
+</html>
